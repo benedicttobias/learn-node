@@ -48,5 +48,10 @@ console.log("before read"); // executed first
 readIt();                   // executed second, but finished last
 console.log("after read"); // executed third
 
+// Example of 'empty' module
 const myModule = require('./my-module');
 console.log(myModule);
+
+// Example of 'new' module
+const myNewModule = require('./my-new-module');
+console.log(myNewModule);
