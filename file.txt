@@ -1,0 +1,1 @@
+This sentence is belong to file.txt

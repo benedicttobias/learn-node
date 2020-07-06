@@ -25,3 +25,14 @@ eventEmitter.on('lunch', () => {
 
 eventEmitter.emit('lunch');
 eventEmitter.emit('lunch');
+
+// File system example (sync)
+const {readFile, readFileSync } = require('fs'); // fs is a build-in module
+const text = readFileSync('./file.txt', 'utf8');
+console.log(text);
+
+// async file read
+const textAsync = readFile('./file.txt', 'utf8', (err, txt) => {
+    console.log(txt);
+})
+console.log('this log should come before the async read');
