@@ -47,3 +47,6 @@ async function readIt() {
 console.log("before read"); // executed first
 readIt();                   // executed second, but finished last
 console.log("after read"); // executed third
+
+const myModule = require('./my-module');
+console.log(myModule);
